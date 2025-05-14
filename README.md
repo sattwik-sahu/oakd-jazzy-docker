@@ -4,9 +4,11 @@ Get the OAK-D RGBD Camera up and running with ROS2 Jazzy!
 
 ## Installation
 
-1. Pull the image from Docker Hub
+1. Pull the image from Docker Hub and clone the helper repo
     ```bash
     docker pull sattwik21/oakd-jazzy:v1.0.2
+    git clone git@github.com:sattwik-sahu/oakd-jazzy-docker.git       # Git clone using SSH
+    git clone https://github.com/sattwik-sahu/oakd-jazzy-docker.git   # Git clone using HTTPS
     ```
 2. Set the `DISPLAY` environment variable and **allow Docker to access the display server** (on X11 display environment)
     ```bash
@@ -32,8 +34,10 @@ Get the OAK-D RGBD Camera up and running with ROS2 Jazzy!
 
 ### Connect the OAK-D Camera
 
-- Connect the OAK-D camera (prefereably using the USB cord provided by Luxonis), to the computer (x86_64 or amd64 architecture; embedded systems require a commercial license to run the SpectacularAI library used for VIO).
-- The USB should be connected to a **high-speed port**. Check if the inner parts of the port are *blue*.
+- Connect the [OAK-D camera](https://shop.luxonis.com/products/oak-d?srsltid=AfmBOoqHXc1_1GaBGmXg64BifbYKK67BzZnEAHjXfYNZaTucdE2CGG0M) (prefereably using the USB cord provided by [Luxonis](https://www.luxonis.com/)), to the computer (`x86_64` or `amd64` architecture; embedded systems require a commercial license to run the [SpectacularAI](https://www.spectacularai.com/) library used for VIO).
+- The USB should be connected to a **super-speed USB _aka_ USB 3.0 port**. Check if the inner parts of the port are *blue*.
+
+> :pencil: Learn more about [super speed usb ports](https://www.techtarget.com/searchwindowsserver/definition/USB-30-SuperSpeed-USB) and [computer architectures](https://en.wikipedia.org/wiki/Computer_architecture)
 
 ### Enter the Container Terminal
 
