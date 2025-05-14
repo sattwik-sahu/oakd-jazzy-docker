@@ -77,7 +77,7 @@ To run the [ROS2 Jazzy](https://docs.ros.org/en/jazzy/index.html) node and visua
 
 ### Visualize the topics
 
-1. Open rviz2
+1. Open rviz2 by connecting to the container in another terminal tab/window using the [`connect_container.sh`](./scripts/connect_container.sh) script as shown above. Make sure to source ROS2 also.
     ```bash
     rviz2
     ```
@@ -92,6 +92,8 @@ To run the [ROS2 Jazzy](https://docs.ros.org/en/jazzy/index.html) node and visua
 | `/slam/depth` | The depth image from the OAK-D camera |
 
 Now that you have the topics, read them in another node and create awesome projects!
+
+> You may want to install [`tmux`](https://github.com/tmux/tmux/wiki) in the container. Advanced users may use it to multiplex terminals inside the container itself without creating more terminal instances on the host. Here is a [quick guide](https://hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/) to use `tmux`.
 
 ## Contributing
 
