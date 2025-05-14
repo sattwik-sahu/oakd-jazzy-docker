@@ -9,6 +9,7 @@ Get the OAK-D RGBD Camera up and running with ROS2 Jazzy!
     docker pull sattwik21/oakd-jazzy:v1.0.2
     git clone git@github.com:sattwik-sahu/oakd-jazzy-docker.git       # Git clone using SSH
     git clone https://github.com/sattwik-sahu/oakd-jazzy-docker.git   # Git clone using HTTPS
+    cd oakd-jazzy-docker
     ```
 2. Set the `DISPLAY` environment variable and **allow Docker to access the display server** (on X11 display environment)
     ```bash
